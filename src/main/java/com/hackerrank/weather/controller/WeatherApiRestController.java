@@ -58,7 +58,6 @@ public class WeatherApiRestController {
 		} else {
 			Storage.weatherStorage.clear();
 		}
-
 		return ResponseEntity.ok().build();
 	}
 }

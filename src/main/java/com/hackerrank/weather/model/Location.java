@@ -54,18 +54,11 @@ public class Location {
 
 	@Override
 	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Location [cityName=");
-		builder.append(cityName);
-		builder.append(", stateName=");
-		builder.append(stateName);
-		builder.append(", latitude=");
-		builder.append(latitude);
-		builder.append(", longitude=");
-		builder.append(longitude);
-		builder.append("]");
-		return builder.toString();
+		return "Location [cityName=" + cityName + ", stateName=" + stateName + ", latitude=" + latitude + ", longitude="
+				+ longitude + "]";
 	}
+
+	
     
     
 }

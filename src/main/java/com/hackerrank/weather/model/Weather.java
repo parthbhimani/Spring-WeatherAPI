@@ -103,17 +103,10 @@ public class Weather {
 
 	@Override
 	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Weather [id=");
-		builder.append(id);
-		builder.append(", dateRecorded=");
-		builder.append(dateRecorded);
-		builder.append(", location=");
-		builder.append(location);
-		builder.append(", temperature=");
-		builder.append(Arrays.toString(temperature));
-		builder.append("]");
-		return builder.toString();
+		return "Weather [id=" + id + ", dateRecorded=" + dateRecorded + ", location=" + location + ", temperature="
+				+ Arrays.toString(temperature) + ", sdf=" + sdf + "]";
 	}
+
+	
 
 }
