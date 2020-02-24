@@ -47,4 +47,21 @@ public class Location {
     public void setLongitude(Float longitude) {
         this.longitude = longitude;
     }
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Location [cityName=");
+		builder.append(cityName);
+		builder.append(", stateName=");
+		builder.append(stateName);
+		builder.append(", latitude=");
+		builder.append(latitude);
+		builder.append(", longitude=");
+		builder.append(longitude);
+		builder.append("]");
+		return builder.toString();
+	}
+    
+    
 }
