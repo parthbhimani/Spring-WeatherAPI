@@ -1,5 +1,7 @@
 package com.hackerrank.weather.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Location {
     private String cityName;
     private String stateName;
@@ -20,6 +22,7 @@ public class Location {
         return cityName;
     }
 
+    @JsonProperty("city")
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
@@ -28,6 +31,7 @@ public class Location {
         return stateName;
     }
 
+    @JsonProperty("state")
     public void setStateName(String stateName) {
         this.stateName = stateName;
     }
@@ -35,7 +39,7 @@ public class Location {
     public Float getLatitude() {
         return latitude;
     }
-
+    @JsonProperty("lat")
     public void setLatitude(Float latitude) {
         this.latitude = latitude;
     }
@@ -43,7 +47,7 @@ public class Location {
     public Float getLongitude() {
         return longitude;
     }
-
+    @JsonProperty("lon")
     public void setLongitude(Float longitude) {
         this.longitude = longitude;
     }

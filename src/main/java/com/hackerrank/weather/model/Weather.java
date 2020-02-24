@@ -35,7 +35,6 @@ public class Weather {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		System.out.println("This Date : " + this.getDateRecorded() + "temp date : " + temp);
 		return (this.getDateRecorded().equals(temp));
 	}
 

@@ -1,11 +1,7 @@
 package com.hackerrank.weather.controller;
 
-import java.net.URI;
-import java.text.ParseException;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
@@ -30,7 +26,6 @@ public class WeatherApiRestController {
 			return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
 
 		Storage.weatherStorage.add(weather);
-		Storage.ListData();
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 
 	}
